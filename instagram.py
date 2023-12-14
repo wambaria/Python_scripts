@@ -10,7 +10,7 @@ def download_instagram(username, folder_path, log_file_path):
         os.makedirs(log_dir)
 
     logging.basicConfig(filename=log_file_path, level=logging.INFO)
-    logging.info("Instagram download started for user: %s", username)
+    logging.info("Instagram pics download started for user: %s", username)
 
     try:
         instagram_loader= instaloader.Instaloader()
@@ -25,7 +25,7 @@ def download_instagram(username, folder_path, log_file_path):
 
         logging.info("Instagram download completed successfully.")
     except Exception as e:
-        logging.error("Error during Instagram download: %s", str(e))
+        logging.error("Error during Instagram pics download: %s", str(e))
 
 if __name__ == "__main__":
     username = "itsmureithi"
